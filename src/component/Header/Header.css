@@ -1,3 +1,13 @@
+header{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
 h1{
-    color: rgb(0, 137, 92);
+    color: rgb(2, 108, 73);
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
