@@ -17,7 +17,7 @@ export default function HornedBeast(props){
             <h2>{props.title} </h2>
             <img className="img" src={props.image_url} alt={props.title} onClick={handleBeastLove}></img>
             <p>{props.description}</p>
-            <p>Has been loved {love} times</p>
+            <p>Has been ❤️ {love} times</p>
 
         </div>
     )
