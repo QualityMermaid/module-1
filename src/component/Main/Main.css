@@ -13,6 +13,6 @@
 
 @media (min-width: 900px) {
     .hornedBeast-main{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }

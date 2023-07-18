@@ -1,6 +1,8 @@
+
 *{
   box-sizing: border-box;
   padding: 0 1rem;
   background-color: rgb(247, 244, 238);
   font-family: monospace;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat920.cur), auto !important;
 }
