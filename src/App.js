@@ -3,7 +3,7 @@ import './App.css';
 import Header from "./component/Header/Header";
 import Footer from "./component/Footer/Footer";
 import Main from "./component/Main/Main";
-import Modal from "./component/Modal/Modal";
+import SelectedBeast from "./component/SelectedBeast/SelectedBeast";
 import { useState } from "react";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
       <Header />
       <Main openModal={handleModal} modalContent={modalContent}/>
       <Footer />
-      {showModal && <Modal modalContent={modalContent} closeModal={closeModal}/>}
+      {showModal && <SelectedBeast modalContent={modalContent} closeModal={closeModal}/>}
     </div>
   );
 }

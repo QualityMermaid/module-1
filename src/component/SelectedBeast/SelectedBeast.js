@@ -1,7 +1,7 @@
 import React from 'react'
-import "./Modal.css"
+import "./SelectedBeast.css"
 
-export default function Modal({modalContent, closeModal}) {
+export default function SelectedBeast({modalContent, closeModal}) {
     return (
         <div className='modal'>
             <div className='beast-modal'>
