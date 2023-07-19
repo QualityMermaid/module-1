@@ -1,10 +1,10 @@
 .modal{
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(245, 222, 179, 0.368);
+    background-color: rgba(245, 222, 179, 0.619);
 }
 
 .beast-modal{
@@ -21,13 +21,12 @@
     flex-direction: column;
     align-items: center;
     padding: 3rem 1rem;
-    /* color: white; */
     border: orange 3px solid;
     border-radius: 5%;
 }
 
 .beast-modal img{
-    width: 80%;
+    max-width: 80%;
 }
 
 .beast-modal h3{

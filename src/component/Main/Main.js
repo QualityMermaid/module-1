@@ -16,14 +16,12 @@ export default function Main({openModal}){
                             key={beast._id} 
                             title={beast.title} 
                             image_url={beast.image_url}  
-                            description={beast.description} openModal={openModal}/>
+                            description={beast.description} 
+                            openModal={openModal}/>
                             )
                         }
                     )}
-
                 </div>
-                <button onClick={openModal}>XX</button>
-
             </main>
         )
 

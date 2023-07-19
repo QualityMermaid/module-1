@@ -2,7 +2,6 @@ import React from 'react'
 import "./Modal.css"
 
 export default function Modal({modalContent, closeModal}) {
-    console.log(modalContent)
     return (
         <div className='modal'>
             <div className='beast-modal'>
