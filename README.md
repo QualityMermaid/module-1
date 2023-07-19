@@ -20,6 +20,8 @@ Actual time needed to complete:  20mins
 Features implemented in Class 3   
 1.  Name of feature: Display a Modal   
 Estimate of time needed to complete: 60mins   
-Start time: 
-End time: 
-Actual time needed to complete:  
+Start time: 1.30pm
+End time: 3pm
+Actual time needed to complete:  90mins, I needed to pass the handling of the modal to the child HornedBeast from Main page! after doing that it works i got my modal popup and close!!!
+
+However didnt get the right content till we went over it at the end of the day. This would be good to go over more

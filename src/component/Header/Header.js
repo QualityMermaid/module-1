@@ -9,7 +9,6 @@ let audio = new Audio(dragon)
 
 export default function Header(){
     function playAudio(){
-    console.log("header clicked")
         audio.play()
     }
     
