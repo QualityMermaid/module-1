@@ -8,16 +8,15 @@ export default function HornedBeast(props){
     const [love, setLove] = useState(0)
     
     function handleBeastLove(){
-    console.log(love)
     setLove(love+1)
     }
 
     return(
         <div className="hornedBeast-div">
             <h2>{props.title} </h2>
-            <img className="img" src={props.image_url} alt={props.title} onClick={handleBeastLove}></img>
+            <img className="img" src={props.image_url} alt={props.title} ></img>
             <p>{props.description}</p>
-            <p>Has been ❤️ {love} times</p>
+            <p onClick={handleBeastLove}>Has been ❤️ {love} times</p>
 
         </div>
     )

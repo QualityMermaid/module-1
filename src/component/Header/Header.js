@@ -15,7 +15,6 @@ export default function Header(){
     
     return(
         <header>
-            {/* <h1 > Beast World</h1> */}
             <button className="beastButton" onClick={playAudio}> <h1 > Beast World</h1></button>
         </header>
     )

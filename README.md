@@ -14,5 +14,12 @@ Actual time needed to complete: 30mins Would have been quicker if i had put it i
 3. Name of feature: Bootstrap   
 Estimate of time needed to complete: 30mins   
 Start time: 3pm
-End time:   
-Actual time needed to complete:   
+End time: 3.20pm
+Actual time needed to complete:  20mins
+
+Features implemented in Class 3   
+1.  Name of feature: Display a Modal   
+Estimate of time needed to complete: 60mins   
+Start time: 
+End time: 
+Actual time needed to complete:  
