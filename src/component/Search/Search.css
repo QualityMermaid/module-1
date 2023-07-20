@@ -1,0 +1,10 @@
+.beastSearch-div{
+    border: 1px red solid;
+    padding: .5rem;
+}
+
+.beastSearch-container label{
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+}

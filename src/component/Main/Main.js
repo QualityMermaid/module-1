@@ -2,12 +2,16 @@
 
 import "./Main.css"
 import HornedBeast from "../HornedBeast/HornedBeast"
-import data from "../../data.json"
+// import Search from "../Search/Search"
+// import data from "../../data.json"
 
-export default function Main({openModal}){
+export default function Main({openModal, data}){
     
         return(
             <main>
+                <div>
+                    {/* <Search data={data}/> */}
+                </div>
                 <div className="hornedBeast-main">                    
                     {data.map((beast, key)=>{
                         return(
