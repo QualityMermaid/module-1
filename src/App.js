@@ -6,6 +6,7 @@ import Main from "./component/Main/Main";
 import SelectedBeast from "./component/SelectedBeast/SelectedBeast";
 import { useState } from "react";
 import data from "./data.json"
+import Fuse from "fuse.js"
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -24,24 +25,25 @@ function App() {
 
   function handleBeastSearch(event){
     const beastNum = parseInt(event.target.value)
-    console.log(beastNum)
-    console.log("beast data  " + beastData)
-
     const filteredBeasts= data.filter((beast) => beast.horns === beastNum);
-    console.log(beastData)
+    event.target.value === "" ? setBeastData(data) : setBeastData(filteredBeasts);
+  }
+
+  const [beastKeyword, setBeastKeyword] = useState({keyword:""});
+
+  function handleBeastSearchKeyword(event){
+    const options = {
+    keys: ["keyword"]
+    };
+    const fuse = new Fuse(data, options);
+  //  const beastKeyword = [event.target.value]
+    const searchResults = fuse.search(event.target.value);
+    console.log(searchResults)
+    const filteredBeasts= data.filter((beast) => beast.keyword === searchResults);
     console.log(filteredBeasts)
+    event.target.value === "" ? setBeastData(data) : setBeastData(searchResults);
 
-  
-  event.target.value === "" ? setBeastData(data) : setBeastData(filteredBeasts);
-
-
-
-  console.log("data" + data)
-  console.log("filtered " + filteredBeasts)
-  console.log("data to filter" + data)
-  console.log(event.target.value )
-}
-
+  }
 
   return (
     <div className="App">
@@ -56,6 +58,10 @@ function App() {
             <option value={"3"}> 3 </option>
             <option value={"100"}> 100</option>
           </select>
+          <label htmlFor="keyword">Keyword</label>
+          <input typeof='text' name="keyword" onChange={handleBeastSearchKeyword} placeholder='Keyword of Beast'></input>
+          {/* <input type='text' name="keyword"  placeholder='Keyword of Beast'></input> */}
+          {/* <button type="submit" onSubmit={handleBeastSearchKeyword}> Search</button>       */}
       </form>
       <Main data={beastData} openModal={handleModal} modalContent={modalContent} />
       <Footer />
